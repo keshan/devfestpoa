@@ -32,7 +32,7 @@ function Main() {
     <div className="flex flex-col justify-center items-center">
       <div>
         {window.ethereum ?
-          (user.isLogged ? isMinting ? <button className="btn btn-outline btn-lg text-slate-400 loading btn-disabled">Minting</button> : <button className="btn btn-outline btn-lg hover:bg-accent text-slate-400">Mint</button> : <span className="text-slate-400 text-lg">Please Connect your wallet to mint</span>) : <span>No wallet installed</span>}
+          (user.isLogged ? isMinting ? <button className="btn btn-outline btn-lg text-slate-400 loading btn-disabled">Minting</button> : <button className="btn btn-outline btn-lg hover:bg-accent text-slate-400" onClick={mint}>Mint</button> : <span className="text-slate-400 text-lg">Please Connect your wallet to mint</span>) : <span>No wallet installed</span>}
       </div>
     </div>
   );
