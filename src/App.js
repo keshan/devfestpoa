@@ -20,7 +20,7 @@ function App() {
 
   return (
     <UserContext.Provider value={user}>
-      <div className="flex flex-col justify-between h-screen w-screen font-press-start bg-[url('https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_960_720.jpg')]">
+      <div className="flex flex-col justify-between h-screen w-screen text-slate-100 font-press-start bg-[url('https://www.exascaleproject.org/wp-content/uploads/2019/11/PathForward-scaled.jpg')]">
         <Navbar />
         <Main />
         <Footer />
